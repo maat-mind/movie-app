@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# NPM Package
+package.json
+
+# API KEY
+src/api_key.js
