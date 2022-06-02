@@ -1,6 +1,7 @@
 :root {
     --purple: #790fff;
     --grey: #979aa6;
+    --grey-background: #222c4f;
     --white: #ffffff;
     --background: #070d23;
 }
@@ -16,6 +17,8 @@
 }
 
 #movie-app-title {
+    font-size: 2.4rem;
+
     color: var(--purple);
 }
 
@@ -26,8 +29,83 @@
 header {
     display: flex;
     justify-content: center;
-    align-items: center;
+
+    padding: 40px 0;
 
     width: 100%;
-    height: 100px;
+    height: auto;
+}
+
+main {
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+#suggested-cards {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-left: 20px;
+    font-size: 1.2rem;
+
+    color: var(--white);
+}
+
+#common-genres {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#common-genres button {
+    width: 15%;
+    height: auto;
+
+    padding: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    color: var(--grey);
+    background-color: var(--grey-background);
+}
+
+#popular-cards {
+    width: 100%;
+    height: auto;
+}
+
+#popular-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#popular-title h3 {
+    font-size: 1rem;
+
+    color: var(--purple);
+}
+
+#popular-title button {
+    width: 20px;
+    height: 20px;
+
+    font-size: 1rem;
+
+    border: none;
+    border-radius: 2px;
+
+    color: var(--white);
+    background-color: var(--purple);
 }
