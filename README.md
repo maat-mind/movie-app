@@ -1,6 +1,5 @@
 # 🎭 Movie web app
-This is an application to view series and movies recommendations built in pure HTML, CSS and JS.
-- API: themoviedb https://www.themoviedb.org/documentation/api
+This is an application to view series and movies recommendations built in pure HTML and CSS.
 
 # Figma design
 I made this on figma for better interpretation of what I initially wanted.
