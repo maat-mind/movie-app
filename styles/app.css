@@ -59,6 +59,33 @@ h2 {
     color: var(--white);
 }
 
+#carousel {
+    display: flex;
+    justify-content: space-between;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#carousel img {
+    margin: 5px;
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--grey-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
 #common-genres {
     display: flex;
     justify-content: space-evenly;
@@ -110,6 +137,23 @@ h2 {
 
     color: var(--white);
     background-color: var(--purple);
+}
+
+#popular-movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+
+    margin-top: 20px;
+}
+
+#popular-movies img {
+    margin: 10px;
+
+    border-radius: 20px;
 }
 
 footer {
