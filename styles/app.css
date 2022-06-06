@@ -132,14 +132,11 @@ footer ul {
 }
 
 footer ul li {
-    margin: 20px 0;
+    margin: 20px 0;Ñ
 }
 
 footer p {
-    position: relative;
-    left: -10px;
+    justify-self: center;
 
     grid-column: 1/3;
-
-    text-align: center;
 }
