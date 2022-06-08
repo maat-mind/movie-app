@@ -19,7 +19,7 @@ html {
 }
 
 #movie-app-title {
-    font-size: 2.4rem;
+    font-size: 3.4rem;
 
     color: var(--purple);
 }
@@ -54,60 +54,73 @@ main {
 
 h2 {
     margin-left: 20px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 
     color: var(--white);
 }
 
 #carousel {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
 
     overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
 }
 
-#carousel img {
-    margin: 5px;
+.carousel-item {
+    margin: 10px 5px;
+}
 
+.carousel-item>img {
     border-radius: 20px;
 }
 
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding: 3rem;
+}
+
+.snaps-inline>* {
+    scroll-snap-align: start;
+}
+
 ::-webkit-scrollbar {
-    height: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--grey-background);
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
+    height: 0px;
 }
 
 #common-genres {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     width: 100%;
     height: auto;
 
     margin: 0 auto;
     margin-bottom: 20px;
+
+    overflow-x: auto;
 }
 
 #common-genres button {
-    width: 15%;
-    height: auto;
+    min-width: fit-content;
 
-    padding: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
 
     border: none;
     border-radius: 5px;
 
+    font-size: 1.2rem;
+
     color: var(--grey);
     background-color: var(--grey-background);
+}
+
+#common-genres button:hover {
+    box-shadow: inset 0 0 10px 2px var(--purple)
+}
+
+#common-genres button:active {
+    box-shadow: inset 0 0 10px 2px var(--purple)
 }
 
 #popular-cards {
@@ -161,7 +174,6 @@ footer {
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
 
-    width: 100%;
     height: auto;
 
     margin-top: 20px;
